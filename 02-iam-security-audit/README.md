@@ -56,7 +56,8 @@ AWS IAM · AWS IAM Access Analyzer · AWS S3
 
 ## Screenshots
 
-*(See `/screenshots` folder — IAM users & groups, MFA setup, Access Analyzer findings, policy configuration)*
+ ![IAM Access Structure](./screenshots/access-structure-diagram.png)
+ ![Access Governance Overview](./screenshots/dev-office-illustration.png)
 
 ---
 
