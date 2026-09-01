@@ -1,0 +1,28 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowEC2ActionsOnDevTaggedInstancesOnly",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:StartInstances",
+        "ec2:StopInstances",
+        "ec2:RebootInstances",
+        "ec2:DescribeInstances",
+        "ec2:DescribeInstanceStatus"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "ec2:ResourceTag/Environment": "Dev"
+        }
+      }
+    },
+    {
+      "Sid": "DenyTerminateAlways",
+      "Effect": "Deny",
+      "Action": "ec2:TerminateInstances",
+      "Resource": "*"
+    }
+  ]
+}
