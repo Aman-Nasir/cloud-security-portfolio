@@ -190,9 +190,9 @@ The bucket policy was reviewed and confirmed to grant only the `s3:GetObject` (r
 
 | # | Finding | Severity | Status | Action Taken |
 |---|---|---|---|---|
-| 1 | `admin-aman` had directly-attached policies bypassing group-based access model | Medium | ✅ Remediated | Migrated to group-based access; direct attachments removed |
-| 2 | MFA not enforced by default on any account | High | ✅ Remediated (policy-level) | `EnforceMFAPolicy` deny-condition policy applied to all 4 groups |
-| 3 | S3 bucket `aman-s3-static-website-001` publicly accessible | Low (reviewed) | ✅ Accepted with justification | Confirmed intentional, read-only scope verified, no action needed |
+| 1 | `admin-aman` had directly-attached policies bypassing group-based access model | Medium |  Remediated | Migrated to group-based access; direct attachments removed |
+| 2 | MFA not enforced by default on any account | High | Remediated (policy-level) | `EnforceMFAPolicy` deny-condition policy applied to all 4 groups |
+| 3 | S3 bucket `aman-s3-static-website-001` publicly accessible | Low (reviewed) | Accepted with justification | Confirmed intentional, read-only scope verified, no action needed |
 
 ---
 
