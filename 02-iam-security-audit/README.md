@@ -33,9 +33,9 @@ All access is granted through **groups, not individual users** — no direct pol
 
 | # | Finding | Status |
 |---|---|---|
-| 1 | User had directly-attached admin policy, bypassing group model | ✅ Remediated |
-| 2 | MFA not enforced by default | ✅ Remediated (policy-enforced) |
-| 3 | S3 bucket publicly accessible | ✅ Reviewed — confirmed intentional (live demo site), read-only scope verified |
+| 1 | User had directly-attached admin policy, bypassing group model |  Remediated |
+| 2 | MFA not enforced by default |  Remediated (policy-enforced) |
+| 3 | S3 bucket publicly accessible |  Reviewed — confirmed intentional (live demo site), read-only scope verified |
 
 Full details, JSON policies, and rationale for every decision are in the [audit report](./AUDIT_REPORT.md).
 
