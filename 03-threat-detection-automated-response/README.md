@@ -27,7 +27,7 @@ This project implements an automated threat detection and response pipeline on A
 
 ## Proof of deployment
 
-![GuardDuty Findings](screenshots/01-guardduty-findings-summary.png)
+![GuardDuty Findings](screenshots/01-guardduty-sample-findings-summary.png)
 
 ## Security notes
 
