@@ -1,4 +1,4 @@
-# Threat Detection & Automated Response — AWS
+# Threat Detection & Automated Response  (AWS)
 
 ![Project Overview](https://raw.githubusercontent.com/Aman-Nasir/cloud-security-portfolio/main/03-threat-detection-automated-response/screenshots/00-project-overview-illustration.png)
 
