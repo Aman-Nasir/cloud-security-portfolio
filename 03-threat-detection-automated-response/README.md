@@ -1,6 +1,6 @@
 # Threat Detection & Automated Response — AWS
 
-![Project Overview](screenshots/00-project-overview-illustration.png)
+![Project Overview](https://raw.githubusercontent.com/Aman-Nasir/cloud-security-portfolio/main/03-threat-detection-automated-response/screenshots/00-project-overview-illustration.png)
 
 ## Overview
 
@@ -8,7 +8,7 @@ This project implements an automated threat detection and response pipeline on A
 
 ## Architecture
 
-![Architecture Diagram](screenshots/threat_detection_automated_response_architecture.png)
+![Architecture Diagram](https://raw.githubusercontent.com/Aman-Nasir/cloud-security-portfolio/main/03-threat-detection-automated-response/screenshots/threat_detection_automated_response_architecture.png)
 
 **Flow:** AWS CloudTrail logs all account activity. Amazon GuardDuty analyzes this activity for anomalies. Amazon EventBridge routes any finding to an AWS Lambda function, which deactivates the associated IAM user's access keys and publishes an alert through Amazon SNS.
 
@@ -27,7 +27,7 @@ A GuardDuty finding was generated to simulate unauthorized API activity. Amazon 
 
 ## Proof of Deployment
 
-![GuardDuty Findings](screenshots/01-guardduty-sample-findings-summary.png)
+![GuardDuty Findings](https://raw.githubusercontent.com/Aman-Nasir/cloud-security-portfolio/main/03-threat-detection-automated-response/screenshots/01-guardduty-sample-findings-summary.png)
 
 ## Security Considerations
 
