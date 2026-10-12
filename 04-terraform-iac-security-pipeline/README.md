@@ -14,7 +14,7 @@ Terraform, GitHub Actions (CI/CD), Docker, tfsec, Checkov, AWS (VPC, KMS, CloudW
 
 ## Pipeline flow
 `git push` → GitHub Actions → `terraform fmt / init / validate` → build scanner Docker image → run tfsec + Checkov inside the container
-
+![Pipeline passing](Screenshot%202026-10-12%20191030.png)
 ## Security findings and what I did about them
 
 The first scan found 7 issues (3 from tfsec, 4 from Checkov).
