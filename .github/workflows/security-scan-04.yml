@@ -1,0 +1,36 @@
+name: 04 Terraform IaC Security Pipeline
+
+on:
+  push:
+    paths:
+      - "04-terraform-iac-security-pipeline/**"
+      - ".github/workflows/security-scan-04.yml"
+  pull_request:
+    paths:
+      - "04-terraform-iac-security-pipeline/**"
+  workflow_dispatch:
+
+jobs:
+  validate-and-scan:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 04-terraform-iac-security-pipeline
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform fmt, init and validate
+        run: |
+          terraform fmt -check
+          terraform init -backend=false
+          terraform validate
+
+      - name: Build scanner Docker image
+        run: docker build -t tf-security-scanner .
+
+      - name: Run tfsec and Checkov in Docker
+        run: docker run --rm tf-security-scanner

@@ -1,0 +1,8 @@
+﻿
+No problems detected!
+
+terraform scan results:
+
+Passed checks: 52, Failed checks: 0, Skipped checks: 2
+
+
